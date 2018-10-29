@@ -1,0 +1,15 @@
+[LEGEND]
+
+UP		w
+
+DOWN		s
+
+LEFT		a
+
+RIGHT		d
+
+WHIP		k
+
+EFFECT		l
+
+PAUSE		p

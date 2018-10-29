@@ -7,6 +7,7 @@ int main()
     /* User Input Dollars and Cents */
     int inDollars = 0;
     int inCents = 0;
+    int itemCounter = 0;
     
     /* User Input Item Number and Quantity */
     int inItemNumber = 0;
@@ -42,7 +43,7 @@ int main()
     int changeCents = 0;
     
     /* Characters used for Checking */
-    char a = 0, b = 0, dotCheck = '.', spaceCheck = ' ';
+    char a = 0, b = 0, dotCheck = '.';
     
     /* Tmp int used for counting loops */
     int j = 0, i = 0;
@@ -57,12 +58,14 @@ int main()
         if (a == dotCheck) {
             itemDollars[i] = inDollars;
             itemCents[i] = inCents;
-        }   else if (a == spaceCheck) {
+            ++itemCounter;
+        } 
+        if (a != dotCheck) {
             i = 0;
             itemNumber[i] = inDollars;
             itemQty[i] = inCents;
             break;
-        }   else break;
+        }
     }
     
     
@@ -70,10 +73,11 @@ int main()
     for(i=1, b = '.'; i < 1000 ; ++i)    {
         scanf("%d%c%d", &inItemNumber, &b, &inQty);
         
-        if (b == spaceCheck) {
+        if (b != dotCheck) {
             itemNumber[i] = inItemNumber;
             itemQty[i] = inQty;
-        }   else if (b == dotCheck) {
+        }   else 
+        if (b == dotCheck) {
             inRecieveDollars = inItemNumber;
             inRecieveCents = inQty;
             break;
@@ -165,8 +169,8 @@ int main()
     
     printf("Description    Unit Price    Qty    Amount\n");
     
-    for(i=0; i<300; ++i) {
-        if (itemQty[i] != 0 && itemCents[i] != 0 && itemDollars[i] != 0) {
+    for(i=0; i<itemCounter; ++i) {
+        if (itemQty[i] >= 0 && itemCents[i] >= 0 && itemDollars[i] >= 0) {
             printf("Item %3d", itemNumber[i]);
             
             for(j=0; j<300; ++j) {
