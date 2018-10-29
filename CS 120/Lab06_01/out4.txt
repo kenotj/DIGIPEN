@@ -1,0 +1,5 @@
+Description    Unit Price    Qty    Amount
+Item   0             8.99    100    899. 0
+                             Total: 899. 0
+                              Paid: 899. 0
+                            Change:   0. 0

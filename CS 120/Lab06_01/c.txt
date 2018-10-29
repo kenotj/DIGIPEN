@@ -1,0 +1,11 @@
+Description    Unit Price    Qty    Amount
+Item   0             1.23    100    123. 0
+Item   1             3.89    78     303.42
+Item   2             4.23    20      84.60
+Item 3 not sold.
+Item 4 not sold.
+Item -3 not sold.
+Item 40 not sold.
+                             Total: 511. 2
+                              Paid: 987.43
+                            Change: 476.41
