@@ -30,28 +30,39 @@ double circle_pi(int num_rectangles)
         x = (i * width) + width / 2;
         /* Finding Height of Rectangle */
         height = sqrt(radius * radius - x * x);
-        areaRect += width * height;                 /* Finding area of rectangles and sum them up together */
+         /* Finding area of rectangles and sum them up together */
+        areaRect += width * height;
     }
-    return areaRect;                                /* Return Pi result in accordance to num_rectangles entered */
+    /* Return Pi result in accordance to num_rectangles entered */
+    return areaRect;
 }
 
 
-double leibniz_pi(int num_iterations)               /* Function for formulating pi using Gottfried Leibniz's method */
+/* Function for formulating pi using Gottfried Leibniz's method */
+double leibniz_pi(int num_iterations)
 {
     int i;
     double divisorTop,divisorBot;
     double divisor, result = 0.0;
-    divisorTop = -1.0;                              /* Setting DivisorTop to -1 in accordance to formula */
+    /* Setting DivisorTop to -1 in accordance to formula */
+    divisorTop = -1.0;
 
     i = 0;
-    while (i < num_iterations)                      /* Declaring i = 0 and running a while loop to loop through the number of iterations */
+    /* Declaring i = 0 and running a while loop to loop through the number of iterations */
+    while (i < num_iterations)
     {
-    divisorTop*= -1.0;                              /* Power of divisorTop by using * the same number "-1^n" */
-    divisorBot = (2*i) +1;                          /* Finding the Formula divisor Bottom of "2(N)+1" */
-    divisor = divisorTop / divisorBot;              /* Dividing divisorTop by divisorBot to get the result from leibniz's formula */
-    result += divisor;                              /* Sum of all results from leibniz's formula */
+    /* Power of divisorTop by using * the same number "-1^n" */
+    divisorTop*= -1.0;
+    /* Finding the Formula divisor Bottom of "2(N)+1" */
+    divisorBot = (2*i) +1;
+    /* Dividing divisorTop by divisorBot to get the result from leibniz's formula */
+    divisor = divisorTop / divisorBot;
+    /* Sum of all results from leibniz's formula */
+    result += divisor;
     ++i;
     }
-    result *= 4;                                    /* Multiply result by 4 to get π */
-   return result;                                   /* Returns the leibni z_pi calculated result*/
+    /* Multiply result by 4 to get π */
+    result *= 4;
+   /* Returns the leibni z_pi calculated result*/
+   return result;
 }
