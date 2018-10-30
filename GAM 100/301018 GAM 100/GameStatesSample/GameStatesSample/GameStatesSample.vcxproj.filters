@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameState">
+      <UniqueIdentifier>{c84be135-15db-484d-9194-b2526f148ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\GameStates">
+      <UniqueIdentifier>{bbaaf57b-7019-4e2c-a31e-67b97d99d394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameManagers">
+      <UniqueIdentifier>{1a6df906-8830-46ca-96d8-ef8b381f1e0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{6dd752d4-91c1-4f91-a5b0-33dbdf12703a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{636e2db0-efdf-418c-a5a0-4dc9fddcbf5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WindowsHelper">
+      <UniqueIdentifier>{24fa8520-f178-42b8-b4d2-4f4214b2db21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameStateTable.c">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateManager.c">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateDigiPenLogo.c">
+      <Filter>GameState\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateGameOver.c">
+      <Filter>GameState\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateMainMenu.c">
+      <Filter>GameState\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.c" />
+    <ClCompile Include="PlayerManager.c">
+      <Filter>GameManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingObjectManager.c">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsHelper.c">
+      <Filter>WindowsHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateDemo.c">
+      <Filter>GameState\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.c">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.c" />
+    <ClCompile Include="BulletManager.c">
+      <Filter>GameManagers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameStateTable.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateManager.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateDigiPenLogo.h">
+      <Filter>GameState\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateGameOver.h">
+      <Filter>GameState\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateMainMenu.h">
+      <Filter>GameState\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerManager.h">
+      <Filter>GameManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingObjectManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsHelper.h">
+      <Filter>WindowsHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateDemo.h">
+      <Filter>GameState\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="BulletManager.h">
+      <Filter>GameManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>GameManagers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

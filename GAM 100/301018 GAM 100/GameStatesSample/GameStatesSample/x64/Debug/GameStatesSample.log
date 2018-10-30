@@ -1,0 +1,15 @@
+﻿  BulletManager.c
+  GameStateDemo.c
+  GameStateDigiPenLogo.c
+  GameStateGameOver.c
+  GameStateMainMenu.c
+  GameStateManager.c
+  GameStateTable.c
+  Main.c
+  MovingObjectManager.c
+  PlayerManager.c
+  RenderManager.c
+  stdafx.c
+  WindowsHelper.c
+  Generating Code...
+  GameStatesSample.vcxproj -> \\Mac\Home\Documents\GitHub\DIGIPEN\GAM 100\301018 GAM 100\GameStatesSample\x64\Debug\GameStatesSample.exe
